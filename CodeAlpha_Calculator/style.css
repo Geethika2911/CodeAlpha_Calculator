@@ -1,0 +1,114 @@
+body {
+  background: #e3f2fd;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 270px;
+}
+
+#display {
+  width: 100%; height: 50px;
+  padding: 5px  10px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.operator {
+  background: #ff9800;
+  color: white;
+}
+
+.clear {
+  background: #f44336;
+  color: white;
+}
+
+.equals {
+  flex: 1;
+  background: #4caf50;
+  color: white;
+}
+
+.history-toggle {
+  flex: 1;
+  background: #2196f3;
+  color: white;
+}
+
+.bottom {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.history-panel {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 270px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.history-panel h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#historyList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#historyList li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.clear-history {
+  width: 100%;
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
